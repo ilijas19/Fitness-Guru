@@ -1,0 +1,204 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #000;
+}
+.spinner {
+  color: #fff;
+  font-size: 6rem;
+  margin-top: 15rem;
+  animation: spin 1s linear infinite; /* Adjusted to 2s for a smoother spin */
+  transform-origin: center; /* Ensure it spins around its center */
+}
+.spinner-div {
+  grid-column: span 4;
+  justify-self: center;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* EXCERICSE SECTION */
+.bodyparts-section {
+  margin: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bodyparts-heading {
+  color: #ddd;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.bodyparts-menu {
+  margin: 0 5rem;
+  width: 90rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  display: flex;
+  gap: 3rem;
+  padding-bottom: 1rem; /* Add padding to ensure content doesn't touch the scrollbar */
+  scrollbar-width: thin; /* Firefox: Set scrollbar width to thin */
+  scrollbar-color: #c4c4c4 transparent; /* Firefox: Set scrollbar colors */
+}
+
+/* Webkit browsers (Chrome, Safari) custom scrollbar */
+.bodyparts-menu::-webkit-scrollbar {
+  height: 8px; /* Height of the scrollbar */
+}
+
+.bodyparts-menu::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.bodyparts-menu::-webkit-scrollbar-track {
+  background-color: transparent; /* Background color of the scrollbar track */
+}
+
+.bodypart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bodypart-img {
+  height: 10rem;
+  width: 10rem;
+  border: 2px solid #a5d8ff;
+  border-radius: 9px;
+  transition: all 0.4s;
+}
+
+.bodypart-name {
+  color: #a5d8ff;
+  font-size: 1.4rem;
+}
+
+/* pagination */
+.pagination-div {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+.btn-next,
+.btn-prev {
+  background-color: transparent;
+  color: #a5d8ff;
+  border: 1px solid #a5d8ff;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+.btn-next:hover,
+.btn-prev:hover {
+  scale: 1.05;
+}
+
+/* listed-excercise-section */
+.listed-excercises-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 5rem; /**/
+}
+.listed-excercise-heading {
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.6rem;
+  margin-top: 2rem;
+}
+.listed-excercises {
+  width: 100%;
+  min-height: 60rem;
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+.listed-excercise {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 12px;
+  height: fit-content;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+.listed-excercise-img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+.listed-excercise-text-div {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.listed-excercise-name {
+  text-transform: capitalize;
+  color: #ddd;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.listed-excercise-target {
+  color: #ddd;
+  font-size: 1.4rem;
+}
+.listed-excercise-id {
+  color: #ddd;
+  font-size: 1.3rem;
+}
+.see-more-btn {
+  color: #a5d8ff;
+  background-color: #000;
+  border: 1px solid #a5d8ff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.see-more-btn:hover {
+  color: #000;
+  background-color: #a5d8ff;
+  border: 1px solid #000;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.bookmark-icon {
+  color: black;
+  font-size: 2.4rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}

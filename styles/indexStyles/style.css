@@ -1,0 +1,90 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #000;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/img/hero-background.avif");
+  background-position: center;
+  background-size: cover;
+  height: 65rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  padding-bottom: 10rem;
+}
+.heading-primary {
+  font-size: 4.8rem;
+}
+.hero-text {
+  font-size: 1.8rem;
+  color: #c4c4c4;
+}
+/* OFFER SECTION */
+.offers-section {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 8rem 4rem;
+  gap: 2rem;
+}
+.offer {
+  text-decoration: none;
+  height: 40rem;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.4s;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.offer:hover {
+  scale: 1.02;
+}
+.offer--excercises {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url("/img/excercises-img.avif");
+}
+.offer--our-workouts {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url("/img/workouts-img.avif");
+}
+.offer--workout-log {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url("/img/log-workouts.avif");
+}
+.offer--about-us {
+  background-image: url(/img/guru.png);
+  background-size: contain;
+}
+
+.offer-heading {
+  color: #ddd;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Guru</title>
+    <link
+      rel="stylesheet"
+      href="styles/headerFooterStyles/headerFooterStyles.css"
+    />
+    <link rel="stylesheet" href="styles/excerciseStyles/excercise.css" />
+    <link
+      rel="stylesheet"
+      href="styles/excerciseStyles/excerciseQuerries.css"
+    />
+    <script type="module" src="src/controller.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <section class="bodyparts-section">
+        <h2 class="bodyparts-heading">Search for Excercise</h2>
+        <menu class="bodyparts-menu">
+          <div data-id="back" class="bodypart">
+            <img class="bodypart-img" src="img/bodyparts/back.webp" alt="" />
+            <p class="bodypart-name">Back</p>
+          </div>
+          <div data-id="cardio" class="bodypart">
+            <img class="bodypart-img" src="img/bodyparts/cardio.webp" alt="" />
+            <p class="bodypart-name">Cardio</p>
+          </div>
+          <div data-id="chest" class="bodypart">
+            <img class="bodypart-img" src="img/bodyparts/chest.webp" alt="" />
+            <p class="bodypart-name">Chest</p>
+          </div>
+          <div data-id="lower arms" class="bodypart">
+            <img
+              class="bodypart-img"
+              src="img/bodyparts/forearms.webp"
+              alt=""
+            />
+            <p class="bodypart-name">Lower Arms</p>
+          </div>
+          <div data-id="upper arms" class="bodypart">
+            <img class="bodypart-img" src="img/bodyparts/biceps.webp" alt="" />
+            <p class="bodypart-name">Upper Arms</p>
+          </div>
+          <div data-id="lower legs" class="bodypart">
+            <img
+              class="bodypart-img"
+              src="img/bodyparts/lower_legs.webp"
+              alt=""
+            />
+            <p class="bodypart-name">Lower Legs</p>
+          </div>
+          <div data-id="upper legs" class="bodypart">
+            <img
+              class="bodypart-img"
+              src="img/bodyparts/upper_legs.webp"
+              alt=""
+            />
+            <p class="bodypart-name">Upper Legs</p>
+          </div>
+          <div data-id="neck" class="bodypart">
+            <img class="bodypart-img" src="img/bodyparts/neck.webp" alt="" />
+            <p class="bodypart-name">Neck</p>
+          </div>
+          <div data-id="shoulders" class="bodypart">
+            <img
+              class="bodypart-img"
+              src="img/bodyparts/shoulders.webp"
+              alt=""
+            />
+            <p class="bodypart-name">Shoulders</p>
+          </div>
+          <div data-id="waist" class="bodypart">
+            <img class="bodypart-img" src="img/bodyparts/core.webp" alt="" />
+            <p class="bodypart-name">Waist</p>
+          </div>
+        </menu>
+      </section>
+
+      <section class="listed-excercises-section">
+        <h2 class="listed-excercise-heading">All Excercises</h2>
+        <div class="listed-excercises">
+          <!-- <figure class="listed-excercise">
+            <img
+              class="listed-excercise-img"
+              src="img/Seated-Cable-Row.gif"
+              alt=""
+            />
+            <div class="listed-excercise-text-div">
+              <p class="listed-excercise-name">
+                Standing Alternating Dumbbell Cross-Body Hammer Curl
+              </p>
+              <p class="listed-excercise-target">Target : Glutes</p>
+              <p class="listed-excercise-id">Id: 1004</p>
+              <button class="see-more-btn">See more</button>
+            </div>
+            <i class="fa-regular fa-bookmark bookmark-icon"></i>
+          </figure> -->
+        </div>
+
+        <div class="pagination-div">
+          <button class="btn-prev">
+            <i class="fa-solid fa-arrow-left"></i> PREV
+          </button>
+          <button class="btn-next">
+            NEXT <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer"></footer>
+  </body>
+</html>

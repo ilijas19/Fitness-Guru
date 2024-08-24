@@ -1,0 +1,81 @@
+@media (max-width: 930px) {
+  html {
+    font-size: 50%;
+  }
+  .listed-excercises {
+    padding: 2rem 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .listed-excercise-name {
+    font-size: 2rem;
+  }
+  .listed-excercise-target {
+    font-size: 1.6rem;
+  }
+  .listed-excercise-id {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 760px) {
+  .bodyparts-menu {
+    width: 70rem;
+  }
+}
+@media (max-width: 660px) {
+  .listed-excercises {
+    padding: 2rem 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bodyparts-menu {
+    width: 60rem;
+  }
+}
+@media (max-width: 560px) {
+  .bodyparts-menu {
+    width: 50rem;
+  }
+}
+@media (max-width: 500px) {
+  .listed-excercises {
+    padding: 2rem 5rem;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3rem;
+  }
+  .listed-excercise {
+    width: 70%;
+  }
+  .listed-excercise-name {
+    font-size: 2.2rem;
+  }
+  .listed-excercise-target {
+    font-size: 1.7rem;
+  }
+  .listed-excercise-id {
+    font-size: 1.5rem;
+  }
+  .bodyparts-menu {
+    width: 40rem;
+  }
+}
+@media (max-width: 420px) {
+  .bodyparts-menu {
+    width: 37rem;
+  }
+  .listed-excercises {
+    padding: 2rem 5rem;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3rem;
+  }
+  .listed-excercise {
+    width: 90%;
+  }
+  .listed-excercise-name {
+    font-size: 2.1rem;
+  }
+  .listed-excercise-target {
+    font-size: 1.6rem;
+  }
+  .listed-excercise-id {
+    font-size: 1.4rem;
+  }
+}
